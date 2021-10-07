@@ -8,6 +8,8 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    /* color: black; */
+
 }
 
 .clearfix {
@@ -19,7 +21,7 @@ body {
 /* ********* header ********* */
 .row-header {
     width: 100%;
-    padding: 10px;
+    padding: 30px;
 }
 
 .row-header-right {
@@ -34,12 +36,53 @@ body {
 }
 
 /* ********* heder bar  ********* */
+/* .header-bar {
+    position: fixed;
+} */
 
 .header-bar .row-header-left, .header-bar .row-header-right {
     width: 48%;
+
 }
 
+.header-bar nav li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.header-bar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    vertical-align: middle;
+
+}
+
+.row-header-left .logo, .row-header-left nav {
+    margin-right: 50px;
+    float: left;
+}
+.row-header-right .btn, .row-header-right nav {
+    margin-left: 50px;
+    float: right;    
+}
+
+.row-header-right .btn {
+    background-color: rgb(0, 97, 255);
+    padding: 5px 15px; 
+
+}
+.row-header-right .btn a {
+    color: white;
+    vertical-align: middle;
+
+}
 /* ********* jumbotron ********* */
+#jumbotron {
+    height: 700px;
+    background-color: rgb(180, 208, 231);
+    padding: 50px;
+}
 
 .jumbo-container .row-header-left {
     width: 31%;
@@ -57,25 +100,19 @@ body {
 /* ********* debug ********* */
 
 .debug .row-header {
-    background-color: blue;
+    /* background-color: blue; */
 
 }
 
 .debug .header-bar .row-header-left, .debug .header-bar .row-header-right {
     /* display: inline-block; */
-    height: 100px;
-    background-color: crimson;
+    /* height: 100px; */
+    /* background-color: crimson; */
 }
 
-.debug #jumbotron {
-    height: 700px;
-    background-color: green;
-    padding: 50px;
-}
 
 .debug .jumbo-container {
     background-color: grey;
-    /* height: 700px; */
 }
 
 .debug .jumbo-container .row-header{
