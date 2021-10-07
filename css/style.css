@@ -10,10 +10,44 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 /* ********* header ********* */
+.row-header {
+    width: 100%;
+    padding: 10px;
+}
 
+.row-header-right {
+    margin-left: 5px;
+    float: right;
+}
 
+.row-header-left {
+    margin-right: 5px;
+    float: left;
+
+}
+
+/* ********* heder bar  ********* */
+
+.header-bar .row-header-left, .header-bar .row-header-right {
+    width: 48%;
+}
+
+/* ********* jumbotron ********* */
+
+.jumbo-container .row-header-left {
+    width: 31%;
+}
+
+.jumbo-container .row-header-right {
+    width: 68%;
+}
 /* ********* main ********* */
 
 
@@ -21,3 +55,37 @@ body {
 
 
 /* ********* debug ********* */
+
+.debug .row-header {
+    background-color: blue;
+
+}
+
+.debug .header-bar .row-header-left, .debug .header-bar .row-header-right {
+    /* display: inline-block; */
+    height: 100px;
+    background-color: crimson;
+}
+
+.debug #jumbotron {
+    height: 700px;
+    background-color: green;
+    padding: 50px;
+}
+
+.debug .jumbo-container {
+    background-color: grey;
+    /* height: 700px; */
+}
+
+.debug .jumbo-container .row-header{
+    /* height: 200px; */
+    margin-bottom: 20px;
+}
+
+.debug .jumbo-container .row-header-left, .debug .jumbo-container .row-header-right  {
+    /* width: 48%; */
+    height: 600px;
+    background-color: crimson;
+
+}
