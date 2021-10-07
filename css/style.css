@@ -157,7 +157,7 @@ body {
 }
 
 .sezione {
-    /* width: 100%; */
+    width: 100%;
     margin-top: 200px;
 }
 
@@ -165,7 +165,12 @@ body {
     font-size: 40px;
 }
 
+#sezione-1 .first-row-box {
+    text-align: center;
+    border: 1px solid grey;
+    padding: 10px 0px;
 
+}
 
 
 /* ********* footer ********* */
@@ -213,8 +218,8 @@ body {
 }
 
 .debug #sezione-1 .box{
-    margin: 0;
-    width: calc(100% / 3 );
+    width: calc(100% / 3 - 10px);
     background-color: red;
-    height: 100px;
+    /* height: 100px; */
+    margin-left: 5px;
 }
