@@ -15,6 +15,9 @@ body {
     display: table;
     clear: both;
 }
+p, span {
+    font-size: 15px;
+}
 
 /* ********* header ********* */
 
@@ -115,7 +118,6 @@ body {
 }
 
 .jumbo-container .col-left p {
-    font-size: 15px;
     font-weight: bold;
 }
 
@@ -230,7 +232,6 @@ body {
 }
 
 #sezione-1 .col-container h4 {
-    font-size: 15px;
     margin-bottom: 5px;
 }
 
@@ -241,7 +242,6 @@ body {
 
 /* sistemare scritta sotto img  */
 #sezione-1 .col-container .img-span {
-    font-size: 15px;
     margin-bottom: 30px;
 }
 
@@ -307,10 +307,6 @@ body {
     margin-bottom: 17px;
 }
 
-#sezione-2 .container p {
-    font-size: 15px;
-}
-
 /* ********* sezione-3 ********* */
 
 #sezione-3 .container .sezione-3-left {
@@ -337,7 +333,6 @@ body {
 
 #sezione-3 .container .sezione-3-right p {
     margin-top: 40px;
-    font-size: 15px;
     margin-bottom: 40px;
 }
 #sezione-3 .container .sezione-3-right a {
@@ -348,24 +343,65 @@ body {
     padding: 7px 15px;
     background-color: white;
     font-size: 15px;
+}
+
+/* ********* sezione-4 ********* */
+#sezione-4 h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+#sezione-4 .container .box {
+    margin: 0px;
+    width: calc(100% / 3);
+    padding: 25px;
+}
+
+#sezione-4 .container .box img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
 
 }
-/* 
-#sezione-3 .container .sezione-3-colonna {
-    display: inline-block;
-    width: 48%;
+
+#sezione-4 .container .box h3 {
+    margin-bottom: 40px;
+    font-size: 25px;
 }
-#sezione-3 .container .sezione-3-colonna img {
-    object-fit: cover;
-} */
 
 
+/* ********* sezione-5 ********* */
+#sezione-5 .container{
+    width: 60%;
+}
+
+#sezione-5 .container h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+#sezione-5 .container a {
+    color: rgb(0, 97, 255)
+}
 /* ********* footer ********* */
 
 
 /* ********* debug ********* */
 
+/* .debug #sezione-4 .container {
+    background-color: blue;
+    height: 500px;
+    width: 100%;
+} */
 
+/* .debug #sezione-4 .container .row {
+    height: 250px;
+    background-color: green;
+} */
+
+/* .debug #sezione-4 .container .box {
+    width: calc(100% / 3 - 5px);
+    background-color: red;
+    height: 200px;
+} */
 /* .debug #sezione-3 .container  {
     background-color: blue;
     height: 500px;
