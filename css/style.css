@@ -163,10 +163,10 @@ body {
     width: 100%;
     margin-top: 200px;
 }
-#sezione-1 .box {
+/* #sezione-1 .box {
     width: 80%;
     height: 100%;
-}
+} */
 #sezione-1 h2{
     font-size: 50px;
     font-weight: bold;
@@ -179,21 +179,32 @@ body {
 }
 
 #sezione-1 .col-container {
-    padding: 0px 20px;
+    padding: 0px 40px;
+}
+
+
+/* ********* box ********* */
+#sezione-1 .box{ 
+    width: calc(100% / 3 - 35px);
+    border: 1px solid lightgray;
+    margin-bottom: 15px;
+    min-height: 1000px;
+
+}
+
+#sezione-1 .box:nth-child(2) {
+    margin-left: 40px;
+    margin-right: 45px;
+
 }
 
 #sezione-1 .box img {
-    height: 15px;
+    height: 20px;
+    vertical-align: middle;
 } 
 
-/* ********* box ********* */
-
-#sezione-1 .box{ 
-    width: calc(100% / 3 -40px);
-    /* display: table-cell; */
-    border: 1px solid lightgray;
-    margin-bottom: 15px;
-
+#sezione-1 .first-row-box span {
+    font-size: 14px;
 }
 
 #sezione-1 .col-container h3, #sezione-1 .col-container h4  {
@@ -211,19 +222,47 @@ body {
 }
 
 #sezione-1 .col-container h5 {
-    font-style: italic;
     margin-bottom: 30px;
     color: grey;
-
 }
 
-
-#sezione-1 .box:nth-child(1), #sezione-1 .box:nth-child(2) {
-    margin-right: 10px;
+/* sistemare scritta sotto img  */
+#sezione-1 .col-container .img-span {
+    font-size: 15px;
+    margin-bottom: 30px;
 }
 
-#sezione-1 .box:nth-child(2), #sezione-1 .box:nth-child(3) {
-    margin-left: 10px;
+#sezione-1 .col-container .btn {
+    color: white;
+    font-size: 13px;
+    padding: 10px 0px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+#sezione-1 .col-container span a {
+    color: rgb(0, 97, 255);
+}
+
+#sezione-1 .col-container .hr {
+    width: 20%;
+    color: grey;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#sezione-1 .col-container .bottom-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+#sezione-1 .col-container nav li {
+    list-style: none;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+#sezione-1 .col-container nav span {
+    color: rgb(0, 97, 255);
 }
 
 /* ********* footer ********* */
@@ -262,23 +301,23 @@ body {
 /* .debug .sezione {
     background-color: blue;
     margin-bottom: 600px;
-}
+} */
 
-.debug #sezione-1 .row  h2{
+/* .debug #sezione-1 .row  h2{
     background-color: red;
     font-size: 40px;
-}
+} */
 
-.debug #sezione-1 .box{
+/* .debug #sezione-1 .box{
     background-color: red;
 
-}
-
+} */
+/* 
 .debug #sezione-1 .false-checkbox {
     height: 50px ;
     background-color: red;
-}
+} */
 
-.debug #sezione-1 .sezione-1-col-container {
+/* .debug #sezione-1 .sezione-1-col-container {
     background-color: green;
 } */
