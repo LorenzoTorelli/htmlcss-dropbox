@@ -34,6 +34,7 @@ p, span {
     padding: 20px;
     padding-bottom: 10px;
     background-color: white;
+    z-index: 1;
 }
 
 .col-right {
@@ -399,10 +400,16 @@ p, span {
     margin: 0px;
     float: left;
     width: 50%;
-    height: 300px;
+    height: 50%;
     position: relative;
 
 }
+.debug #sezione-1b .box-sezione-1b::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
 
 #sezione-1b .box-sezione-1b img {
     width: 50%;
@@ -452,7 +459,7 @@ p, span {
     background-color: lightgray;
     padding: 60px;
     width: 40%;
-    height: 600px;
+    min-height: 571px;
 }
 
 #sezione-1b #main-sezione-1b img {
@@ -472,9 +479,51 @@ p, span {
     margin-bottom: 60px;
 }
 
-#sezione-1b .bottom-main {
-    height: 500px;
-    background-color: blue;
+
+/* ********* bottom-menu ********* */
+
+.bottom-menu {
+    background-color: rgb(180,208,231);
+    /* height: 200px; */
+}
+
+
+#sezione-2b .bottom-main {
+    background-color: rgb(180,208,231);
+    padding: 150px 0px;
+}
+
+#sezione-2b .bottom-main .col-left, #sezione-1b .bottom-main .col-left {
+    width: 50%;
+} 
+#sezione-1b .bottom-main h2 {
+    font-size: 40px;
+    vertical-align: top;
+    color: rgb(97, 0, 43)
+}
+#sezione-1b .bottom-main .btn {
+    background-color: white;
+    color: black;
+    padding: 5px 50px;
+    text-decoration: none;
+    
+}
+
+#sezione-3b h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+#sezione-3b .question{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+#sezione-3b .question .simbolo {
+    font-weight: bold;
+    width: 60px;
+    text-align: end;
 }
 
 /* ********* footer ********* */
