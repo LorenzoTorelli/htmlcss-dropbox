@@ -120,8 +120,7 @@ p, span {
     font-weight: bold;
 }
 
-.jumbo-container .col-left nav li {
-    list-style: none;
+.jumbo-container .col-left div {
     margin-top: 20px;
 }
 
