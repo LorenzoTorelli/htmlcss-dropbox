@@ -29,10 +29,8 @@ p, span {
 .header-bar {
     width: 100%;
     position: fixed;
-    height: 70px;
-    line-height: 30px;
-    padding: 20px;
-    padding-bottom: 10px;
+    height: 80px;
+    line-height: 80px;
     background-color: white;
     z-index: 1;
 }
@@ -48,48 +46,76 @@ p, span {
 .btn {
     text-align: center;
     background-color: rgb(0, 97, 255);
-
+    padding: 5px 10px;
 }
+
+
 /* ********* header bar  ********* */
 
-.header-bar .col-left, .header-bar .col-right {
-    width: 48%;
+.header-bar .col-left {
+    width: 50%;
 }
 
 .header-bar .col-right nav li, .header-bar .col-left nav li{
+    margin: 0px 20px;
     display: inline-block;
 }
 
-.header-bar .col-left nav li {
-    margin-right: 30px;
+.header-bar .col-left nav li img {
+    vertical-align: text-bottom;
 }
 
-.header-bar .col-right nav li {
-    margin-left: 30px;
-
-}
 .header-bar a {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
 
-.col-left .logo, .col-left nav {
-    margin-right: 30px;
-    float: left;
-}
-.col-right .btn, .col-right nav {
-    margin-left: 50px;
-    float: right;    
+.header-bar .col-left nav.col-right .btn {
+    display: inline;
 }
 
-.header-bar .row .btn {
-    width: 60px;
-}
 .btn a {
     color: white;
     text-decoration: none;
 }
+
+.header-bar li:hover {
+    border-bottom: 2px solid rgb(0, 97, 255);
+}
+
+.header-bar #img-logo-header:hover, .header-bar .btn:hover {
+    border-bottom: none;
+} 
+
+.header-bar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 188px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: -1;
+  }
+
+.header-bar .dropdown-content a {
+    color: black;
+    line-height: 20px;
+    padding: 12px 15px;
+    text-decoration: none;
+    display: block;
+    font-weight: normal;
+    text-align: left;
+}
+
+.header-bar .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.header-bar .dropdown-content a:hover{
+    background-color: lightgray;
+
+}
+
 
 /* ********* jumbotron ********* */
 #jumbotron {
@@ -116,17 +142,11 @@ p, span {
     padding-right: 60px;
 }
 
-.jumbo-container .col-left p {
-    font-weight: bold;
-}
-
 .jumbo-container .col-left div {
     margin-top: 20px;
 }
 
-.jumbo-container .col-left .btn {
-    padding: 5px 10px;
-}
+
 .jumbo-container .col-left .btn  {
     color: white;
     font-weight: bold;
@@ -187,10 +207,13 @@ p, span {
 
 .nck {
     margin-left: 20px;
-    border: 1px solid lightgray;}
+    border: 1px solid lightgray;
+}
+
 .ck {
     border: 4px solid rgb(1,97,255);
 }
+
 #sezione-1 .col-container {
     padding: 0px 40px;
 }
@@ -208,7 +231,6 @@ p, span {
 #sezione-1 .box:nth-child(2) {
     margin-left: 40px;
     margin-right: 45px;
-
 }
 
 .box img {
@@ -251,6 +273,7 @@ p, span {
     margin-left: -25px;
     vertical-align: top;
 }
+
 #sezione-1 .col-container .img-text .img {
     width: 15%;
 }
@@ -262,9 +285,7 @@ p, span {
     margin-top: 60px;
     margin-bottom: 40px;
 }
-/* #sezione-1 .col-container .btn a {
-    text-decoration: none;
-} */
+
 #sezione-1 .col-container span a {
     color: rgb(0, 97, 255);
 }
@@ -302,6 +323,7 @@ p, span {
     padding: 20px;
 
 }
+
 #sezione-2 .container-row {
     width: 100%;
     margin-bottom: 20px;
@@ -322,20 +344,25 @@ p, span {
 #sezione-3 .container .sezione-3-left {
     width: 60%;
 }
+
 #sezione-3 .container .sezione-3-right {
     width: 38%;
 }
+
 #sezione-3 .container .sezione-3-left, #sezione-3 .container .sezione-3-right {
     display: inline-block;
 }
+
 #sezione-3 .container .sezione-3-left img {
     object-fit: cover;
     width: 100%;
 }
+
 #sezione-3 .container .sezione-3-right {
     vertical-align: top;
     padding: 40px;
 }
+
 #sezione-3 .container .sezione-3-right h2 {
     font-weight: bold;
     font-size: 40px;
@@ -345,6 +372,7 @@ p, span {
     margin-top: 40px;
     margin-bottom: 40px;
 }
+
 #sezione-3 .container .sezione-3-right a {
     box-shadow: 2px 2px 8px #888888;
     text-decoration: none;
@@ -370,7 +398,6 @@ p, span {
     width: 100%;
     height: 100%;
     margin-bottom: 20px;
-
 }
 
 #sezione-4 .container .box h3 {
@@ -402,10 +429,10 @@ p, span {
 #sezione-1b .row {
     margin:0;
 }
+
 #sezione-1b .box {
     width: 30%;
 }
-
 
 #sezione-1b .box-sezione-1b {
     margin: 0px;
@@ -415,12 +442,12 @@ p, span {
     position: relative;
 
 }
+
 #sezione-1b .box-sezione-1b::after {
     content: "";
     display: block;
     padding-bottom: 100%;
-  }
-
+}
 
 #sezione-1b .box-sezione-1b img {
     width: 50%;
@@ -506,11 +533,13 @@ p, span {
 #sezione-2b .bottom-main .col-left, #sezione-1b .bottom-main .col-left {
     width: 50%;
 } 
+
 #sezione-2b .bottom-main h2 {
     font-size: 40px;
     vertical-align: top;
     color: rgb(97, 0, 43)
 }
+
 #sezione-2b .bottom-main .btn {
     background-color: white;
     color: black;
@@ -524,18 +553,59 @@ p, span {
     margin-bottom: 40px;
 }
 
-#sezione-3b .question{
-    margin-top: 30px;
-    margin-bottom: 30px;
+#sezione-3b li{
+    /* line-height: 80px; */
     width: 100%;
+    line-height: 80px;
+    list-style: none;
+    border-top: 2px solid black;
+    /* padding-top: 30px; */
+}
+/* #sezione-3b li h3{
+    line-height: 30px;
+} */
+#sezione-3b li h3::after{
+    content: "	\2304";
+    float: right;
+    vertical-align: super;
 }
 
-#sezione-3b .question .simbolo {
+#sezione-3b .sezione-3b-dropdown-content {
+    display: none;
+   
+}
+
+#sezione-3b .sezione-3b-dropdown:hover #sezione-3b .sezione-3b-dropdown-content {
+    display: block;
+}
+/* #sezione-3b .question .simbolo {
     font-weight: bold;
     width: 60px;
     text-align: end;
 }
 
+#sezione-3b  .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 188px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  #sezione-3b  .dropdown .dropdown-content p {
+    color: black;
+    line-height: 20px;
+    padding: 12px 15px;
+    text-decoration: none;
+    display: block;
+    font-weight: normal;
+    text-align: left;
+}
+
+#sezione-3b  .dropdown:hover .dropdown-content p {
+    display: block;
+} */
 /* ********* footer ********* */
 
 .main-footer {
